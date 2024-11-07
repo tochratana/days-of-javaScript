@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="reply()" id="btnClick">Click Event</button>
+    <button id="btnDoubleClick">Double Click</button>
+    <p onmouseenter="changeBackground()" id="paragraph">
+      THis is a element to example for change background when I hover
+    </p>
+    <input type="text" />
+    <button id="trim">Time</button>
+    <script src="./main.js"></script>
+    <div
+      onmousemove="handleMouseMove(event)"
+      style="width: 200px; height: 100px; background-color: lightcoral"
+    >
+      Move mouse inside me!
+    </div>
+
+    <script>
+      function handleMouseMove(event) {
+        console.log(`Mouse position: X=${event.clientX}, Y=${event.clientY}`);
+      }
+    </script>
+    <!-- Mouse contextmenu mouse event -->
+    <div
+      id="rightClickArea"
+      style="
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        text-align: center;
+        line-height: 100px;
+      "
+    >
+      Right-click Here
+    </div>
+
+    <script>
+      const rightClickArea = document.getElementById("rightClickArea");
+
+      rightClickArea.addEventListener("contextmenu", (event) => {
+        event.preventDefault(); // Prevent the default context menu
+        console.log("Custom context menu triggered");
+
+        // You could also show a custom menu here instead
+        // Example: alert("Custom context menu triggered");
+      });
+    </script>
+  </body>
+</html>
