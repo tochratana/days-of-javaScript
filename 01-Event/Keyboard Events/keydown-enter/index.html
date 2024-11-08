@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example of Keydonw wiht Enter</title>
+  </head>
+  <style>
+    button {
+      background-color: red;
+      border: none;
+      width: 60px;
+      height: 20px;
+    }
+    input {
+      background-color: rgb(169, 214, 214);
+      border: none;
+      width: 200px;
+      height: 20px;
+    }
+  </style>
+  <body>
+    <input type="text" id="input" onkeydown="handleEnter()" />
+    <button id="add">Add</button>
+    <div id="name"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
