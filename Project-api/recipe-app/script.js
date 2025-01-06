@@ -7,7 +7,7 @@ const fetchName = async (queryName) => {
   product_container.innerHTML = "";
 
   const urlName = await fetch(
-    `http://themealdb.com/api/json/v1/1/search.php?s=${queryName}`
+    `https://themealdb.com/api/json/v1/1/search.php?s=${queryName}`
   );
   const respon = await urlName.json();
   if (respon.meals) {
