@@ -7,3 +7,4 @@ const studentList = student
   .join("\n");
 
 console.log(studentList);
+

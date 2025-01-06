@@ -24,10 +24,11 @@
 5. [Fetch Data that respon promise using then and catch](./04-Fectch-Data/fetch-then-catch/script.js)
 6. [Fetch Data that respon promise using Async and Await](./04-Fectch-Data/fetch-async-await/script.js)
 
-## Exercise Promise
+## Exercise
 
 1. [Promise Basic](./04-Fectch-Data/exercise-promise/01-basie.js)
 2. [Chaining Promises](./04-Fectch-Data/exercise-promise/%20chainingPromises.js)
 3. [Handle Error](./04-Fectch-Data/exercise-promise/handleError.js)
 4. [promise.all](./04-Fectch-Data/exercise-promise/promiseAll.js)
 5. [promise.race](./04-Fectch-Data/exercise-promise/promiseRace.js)
+6. [Fetching API and Query Name Product](./Project-api/recipe-app/script.js)
