@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather-app</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=humidity_high"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-search">
+        <input
+          type="text"
+          placeholder="Search your location"
+          class="input-box"
+        />
+        <i class="fa-solid fa-magnifying-glass btn-search"></i>
+      </div>
+      <div>
+        <div class="container-img">
+          <img src="./img/not-found.png" class="img" />
+        </div>
+        <div class="container-des">
+          <h1 class="temperature">0<sup>°C</sup></h1>
+
+          <p class="des">Nothing</p>
+          <div class="container-two">
+            <div style="display: flex; align-items: center">
+              <i class="fa-solid fa-droplet icon-humidty"></i>
+              <div>
+                <p class="humidty">0 %</p>
+                <p>Humidty</p>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 5px">
+              <i class="fa-solid fa-wind icon-humidty"></i>
+              <div>
+                <p class="wind-speed">0 Km/h</p>
+                <p>wind speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -32,3 +32,4 @@
 4. [promise.all](./04-Fectch-Data/exercise-promise/promiseAll.js)
 5. [promise.race](./04-Fectch-Data/exercise-promise/promiseRace.js)
 6. [Fetching API and Query Name Product](./Project-api/recipe-app/script.js)
+7. [Searching weather by city name](./Project-api/weather-app/script.js)
