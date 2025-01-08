@@ -31,6 +31,8 @@ async function checkWeather(city) {
       case "Snow":
         img.src = "./img/snow.png";
         break;
+      default:
+        img.src = "./img/Snow.png";
     }
     temperature.innerHTML = `${(fetchWeather.main.temp - 273.15).toFixed(
       2
@@ -42,14 +44,27 @@ async function checkWeather(city) {
 
     // Check for API error response
     if (fetchWeather.cod !== 200) {
-      img.src = "./img/not-found.png";
+      console.log("Hello");
+
       console.log(`Error: ${fetchWeather.message}`);
       return;
     }
   } catch (error) {
+    img.src = "./img/not-found.png";
+    temperature.innerHTML = `0<sup>°C</sup>`;
+    humidty.innerHTML = `០​ %`;
+    wind_speed.innerHTML = `0 Km/h`;
+    des.innerHTML = `<p>Can't find ${city}</p>`;
     console.log("Error fetching data: " + error);
   }
 }
+
+input_box.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Prevent form submission
+    btn_search.click();
+  }
+});
 btn_search.addEventListener("click", () => {
   checkWeather(input_box.value.trim());
 });
