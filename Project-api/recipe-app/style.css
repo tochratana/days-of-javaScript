@@ -21,6 +21,7 @@ body {
 .searchButton {
   width: 60px;
   height: 40px;
+  cursor: pointer;
 }
 
 .product-container {
@@ -43,6 +44,8 @@ body {
 }
 .text-not-found {
   grid-column: 2 / span 2;
+  text-align: center;
+  margin: auto;
 }
 .img {
   width: 300px;

@@ -1,9 +1,11 @@
 const inputSearch = document.querySelector(".inputSearch");
 const searchButton = document.querySelector(".searchButton");
 const product_container = document.querySelector(".product-container");
+const text_not_found = document.querySelector(".text-not-found");
 let storeValueSearch;
 
 const fetchName = async (queryName) => {
+  
   product_container.innerHTML = "";
 
   const urlName = await fetch(
@@ -24,12 +26,18 @@ const fetchName = async (queryName) => {
 	  `;
     });
   } else {
-    product_container.innerHTML = `<h1 class="text-not-found">We can't find ${storeValueSearch}</h1>`;
+    text_not_found.innerHTML = `<h1 class="text-not-found">We can't find ${storeValueSearch}</h1>`;
   }
 };
 
 fetchName("");
+inputSearch.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    searchButton.click();
+  }
+});
 searchButton.addEventListener("click", (e) => {
+  console.log("Loading...");
   e.preventDefault();
   const searchValue = inputSearch.value.trim();
   storeValueSearch = searchValue;
