@@ -1,3 +1,6 @@
+body {
+  font-family: sans-serif;
+}
 * {
   padding: 0;
   margin: 0;
@@ -21,11 +24,36 @@
   font-size: 20px;
   cursor: pointer;
   width: 80px;
+  border: none;
 }
 
 .input-box {
   height: 50px;
-  width: 50%;
+  width: 100%;
   font-size: 20px;
   padding-left: 10px;
+}
+.result {
+  display: none;
+  background-color: rgb(239, 239, 239);
+  width: 80%;
+  margin: auto;
+}
+.result > h1 {
+  padding: 10px;
+  display: inline;
+}
+
+.preposition {
+  display: inline;
+}
+
+.result > p {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.block {
+  display: block;
 }
