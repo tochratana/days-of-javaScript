@@ -113,3 +113,17 @@ let grade =
     : "F";
 
 console.log(grade);
+
+// learn new operator
+
+console.log("-".repeat(20));
+
+let abc;
+console.log((abc ??= "More Option"));
+
+let data = null ?? "Don't have any data"; // just handle on Null and Undefined
+console.log(data);
+
+let firstPerson = "Stay home";
+let singleOne = (firstPerson ??= "On any signle");
+console.log(singleOne);
